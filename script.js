@@ -277,14 +277,8 @@ function escapeHtml(text) {
 
 
 if (tasks.length === 0) {
-    tasks = [
-        { id: 1, text: 'Create a to-do list app', completed: true, createdAt: new Date().toISOString() },
-        { id: 2, text: 'Learn JavaScript', completed: true, createdAt: new Date().toISOString() },
-        { id: 3, text: 'Build a portfolio project', completed: false, createdAt: new Date().toISOString() },
-        { id: 4, text: 'Read a programming book', completed: false, createdAt: new Date().toISOString() }
-    ];
+    tasks = []; 
     saveTasks();
 }
-
 
 document.addEventListener('DOMContentLoaded', initApp);
